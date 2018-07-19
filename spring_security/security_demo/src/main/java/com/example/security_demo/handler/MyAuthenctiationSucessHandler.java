@@ -26,5 +26,6 @@ public class MyAuthenctiationSucessHandler extends SimpleUrlAuthenticationSucces
         logger.info("登录成功");
         response.setContentType("application/json;charset=UTF-8");
         response.getWriter().write(objectMapper.writeValueAsString(authentication));
+        response.sendRedirect("/user/index");
     }
 }

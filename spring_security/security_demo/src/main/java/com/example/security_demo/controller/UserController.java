@@ -19,4 +19,7 @@ public class UserController {
     public String tologin(){
         return "login";
     }
+
+    @RequestMapping("/index")
+    public  String toIndex(){ return "index";}
 }
